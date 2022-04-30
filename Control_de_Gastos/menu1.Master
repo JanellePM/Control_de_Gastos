@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="menu1.master.cs" Inherits="Control_de_Gastos.menu1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="/css/Menucss.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="dropdownmenu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Me</a></li>
+    <li><a href="#">Catalogo</a>
+      <ul id="submenu">
+        <li><a href="usuarios.aspx">Catalogo de usuarios</a></li>
+        <li><a href="clientes.aspx">Catalogo de clientes</a></li>
+        <li><a href="#">Catalogo de horarios</a></li>
+      </ul>
+    </li>
+    <li><a href="Noticias.aspx">Noticias</a></li>
+    <li><a href="Contactos.aspx">Contactos</a></li>
+  </ul>
+</nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
